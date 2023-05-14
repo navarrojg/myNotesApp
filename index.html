@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <script src="https://kit.fontawesome.com/fb79c194ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+        <div class="header-btns">
+            <button class="add icon"><i class="fa-solid fa-plus"></i> Dodaj</button>
+            <button class="remove-all icon"><i class="fa-solid fa-trash-can"></i> Usuń wszystkie</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+
+        <!-- <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Zakupy</h2>
+                    <button class="remove-note"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="note-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a at nobis voluptate cumque,
+                natusjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+            </div>
+
+        </div> -->
+    </div>
+
+    <div class="note-panel">
+        <h2>Dodaj Notatkę</h2>
+        <label for="category">Wybierz kategorię</label>
+        <select id="category">
+            <option value="0" selected disabled>-wybierz kategorię-</option>
+            <option value="Zakupy">Zakupy</option>
+            <option value="Praca">Praca</option>
+            <option value="Inne">Inne</option>
+        </select>
+
+        <label for="text">Wpisz treść notatki</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Uzupełnij wszystkie pola!</p>
+        <div class="panel-buttons">
+            <button class="save icon"><i class="fa-sharp fa-solid fa-floppy-disk"></i> Zapisz</button>
+            <button class="cancel icon"><i class="fa-regular fa-square-xmark"></i> Anuluj</button>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

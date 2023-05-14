@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	background-color: rgb(233, 233, 233);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	height: 120px;
+}
+
+h1 {
+	padding: 20px;
+}
+
+.header-btns {
+	padding: 20px;
+}
+
+.add,
+.remove-all {
+	padding: 15px 10px;
+	margin-left: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.add:hover,
+.remove-all:hover,
+.save:hover,
+.cancel:hover {
+	background-color: aqua;
+}
+
+.note-area {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.note {
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+	/* padding: 10px; */
+	width: 300px;
+	border: 1px solid black;
+	background-color: yellow;
+}
+
+.note-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	/* width: 100%;
+	height: 60px; */
+}
+
+.note-title {
+	font-size: 30px;
+}
+
+.remove-note {
+	position: relative;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.note-body {
+	padding: 20px;
+	/* background-color: lime; */
+	font-size: 24px;
+}
+
+.note-panel {
+	display: none;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	padding: 10px 20px;
+	height: 350px;
+	width: 400px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid black;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #000;
+}
+
+h2 {
+	padding: 15px 0;
+	text-transform: uppercase;
+}
+
+label,
+select,
+textarea {
+	padding: 10px;
+}
+
+textarea {
+	min-width: 299px;
+	max-width: 350px;
+	min-height: 50px;
+}
+select {
+	width: 100%;
+	border: 1px light black;
+	border-radius: 8px;
+}
+
+.save,
+.cancel {
+	justify-content: center;
+	margin: 10px;
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid black;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.error {
+	padding: 15px 0;
+	visibility: hidden;
+	color: red;
+}
